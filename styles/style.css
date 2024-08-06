@@ -1,0 +1,217 @@
+/* inter font */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* tangerine font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Tangerine:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* common css */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: inter;
+    /* background: rgb(185, 185, 185); */
+    background: black;
+}
+
+.container{
+    margin: 50px 75px;
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    /* text-align: center; */
+}
+
+p{
+    color: rgba(255, 255, 255, 0.5);
+    margin: 14px 0;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+/* header nav section */
+
+.header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    padding: 50px 75px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.nav-logo{
+    color: rgb(230, 83, 60);
+    font-size: 2.1rem;
+    font-weight: 800;
+}
+
+.nav-links{
+    display: flex;
+    gap: 15px;
+    box-sizing: border-box;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 36px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 8px 20px 5px;
+    transition: 0.5s ease-in;
+}
+
+.nav-links a:hover{
+    background: rgb(230, 83, 60);
+    border-radius: 45px;
+}
+
+/* banner section */
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.banner-text{
+    flex-basis: 50%;
+}
+
+.banner-img{
+    flex-basis: 50%;
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+.banner-img img{
+    /* width: 50%; */
+
+}
+
+.banner-title{
+    color: rgb(255, 255, 255);
+    font-size: 4.8rem;
+    font-weight: 900;
+    line-height: 120%;
+    margin: 40px 0;
+}
+
+.tangerine{
+    font-family: tangerine;
+    font-size: 9rem;
+}
+
+.banner-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    line-height: 110%;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+.btn-primary{
+    width: 224px;
+    height: 54px;
+    padding: 16px 40px;
+    margin: 0 15px;
+    background: black;
+    border: 1px solid white;
+    border-radius: 45px;
+    color: white;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background: rgb(230, 83, 60);
+    border: none;
+}
+
+.banner-card-1, .banner-card-2{
+    color: white;
+    position: absolute;
+    top: 40%;
+    right: 3%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.banner-card-1 h4, .banner-card-2 h4{
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.banner-card-1 p, .banner-card-2 p{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.65);
+    text-align: left;
+}
+
+.banner-card-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    top: 90%;
+    right: 25%;
+}
+
+.banner-card-2 .ball{
+    width: 40px;
+    height: 40px;
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+}
+
+/* habit section */
+
+.habit-text{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.habit-info-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.habit-info-container h4{
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.info-img{
+    border-radius: 50%;
+}
+
+.info1, .info2, .info3, .info4{
+    text-align: center;
+}

@@ -163,16 +163,36 @@ nav{
     border: none;
 }
 
-.banner-card-1, .banner-card-2{
+
+.banner-card-1{
     color: white;
     position: absolute;
-    top: 40%;
-    right: 3%;
+    top: 30%;
+    right: 0;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    padding: 15px;
+    padding: 15px 30px 15px 15px;
+}
+
+.banner-card-2{
+    color: white;
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 15px 30px 15px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    top: 90%;
+    right: 25%;
 }
 
 .banner-card-1 h4, .banner-card-2 h4{
@@ -190,15 +210,6 @@ nav{
     text-align: left;
 }
 
-.banner-card-2{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-    top: 90%;
-    right: 25%;
-}
-
 .banner-card-2 .ball{
     width: 40px;
     height: 40px;
@@ -206,22 +217,77 @@ nav{
     border-radius: 50%;
 }
 
-/* banner section responsive */
+/* banner section responsive for mobile */
 
 @media screen and (max-width: 576px) {
+
+    .container{
+        margin: 0px 0px;
+    }
     .banner{
         flex-direction: column;
     }
     .banner-img{
         position: relative;
+        margin: 20px auto 0;
     }
     .banner-title{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .tangerine{
         font-size: 4rem;
     }
+    .banner-card-1{
+        top: 55%;
+        right: -25%;
+    }
+    .banner-card-2{
+        top: 80%;
+        left: -10%;
+    }
+    .banner-card-2 .ball{
+        width: 30px;
+        height: 30px;
+        background: rgb(230, 83, 60);
+        border-radius: 50%;
+    }
 }
+
+
+/* banner section responsive for tablets */
+
+@media screen and (max-width: 992px) and (min-width: 577px) {
+    .banner-btn-container{
+        display: flex;
+    }
+    .btn-primary{
+        width: 130px;
+        height: 45px;
+        padding: 16px 20px;
+        margin: 0 15px;
+        background: black;
+        border: 1px solid white;
+        border-radius: 45px;
+        color: white;
+        transition: 0.7s ease;
+        cursor: pointer;
+    }
+    .banner-card-2{
+        top: 55%;
+        right: 20%;
+    }
+    .banner-img{
+        position: relative;
+        margin-left: 40px;
+    }
+    
+}
+
+
+
+
+
+
 
 /* habit section */
 
@@ -251,6 +317,41 @@ nav{
     text-align: center;
 }
 
+
+/* habit section for mobile */
+
+@media screen and (max-width: 576px) {
+    .habit-text{
+        margin: 0 auto 40px;
+        width: 90%;
+    }
+    .habit-text h3{
+        font-size: 32px;
+    }
+    .habit-info-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto 40px;
+    }
+}
+
+
+/* habit section responsive for tablet */
+
+
+@media screen and (min-width: 577px) and (max-width: 992px)  {
+    .habit-info-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
 /* mile section */
 
 .mile{
@@ -278,10 +379,32 @@ nav{
     width: 90%;
     
     transform: translate(-35%, 30%) scale(2.8);
-    /* transform: translate(5%, 5%); */
-    
+    /* transform: translate(5%, 5%); */  
+}
+
+
+/* mile section responsive for mobile */
+
+@media screen and (min-width: 576px) {
     
 }
+
+
+/* mile section responsive for tablet */
+
+@media screen and (max-width: 992px) and (min-width: 577px) {
+    .mile-img img{
+        width: 300px;
+        height: 370px;
+        
+        transform: translate(-35%, 30%) scale(3);
+        /* transform: translate(5%, 5%); */  
+    }
+    
+} 
+    
+
+
 
 /* training section */
 
@@ -400,6 +523,21 @@ nav{
     position: relative;
 }
 
+
+
+
+
+/* training section responsive for tablet */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .training-img-container{
+        display: grid;
+        grid-column: span 2;
+    }
+}
+
+
+
 /* calculator section */
 
 .calculator{
@@ -499,6 +637,35 @@ select option{
     grid-column: 1 / span 2;
 }
 
+
+
+/* calculator section responsive for tablet */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .calculator-text{
+        display: grid;
+        width: 80%;
+        text-align: left;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+    .calculator-card{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 75px;
+        background: rgb(34, 34, 34);
+    }
+    .calculator-chart{
+        margin-bottom: 40px;
+    }
+    .calculator-form{
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
+
+
+
 /* team section */
 
 .team{
@@ -570,7 +737,7 @@ select option{
 }
 
 .footer h1{
-    color: rgba(255, 255, 255, 0.5);
+    color: rgb(230, 83, 60);
     font-size: 70px;
     line-height: 120%;
     font-weight: 800;
@@ -587,6 +754,29 @@ hr{
     text-align: center;
     padding-bottom: 30px;
     margin-bottom: 0;
+}
+
+
+/* footer section responsive for tablet */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-col-1{
+        grid-column: 1 / -1;
+        width: 60%;
+        margin-bottom: 40px;
+    }
+    
+    .footer-col-2{
+        grid-column: 1 / 2;
+    }
+    
+    .footer-col-3{
+        grid-column: 2 / 3;
+    }
 }
 
 

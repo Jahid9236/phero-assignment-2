@@ -385,14 +385,25 @@ nav{
 
 /* mile section responsive for mobile */
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
     
+    .mile{
+        flex-direction: column;
+        gap: 40px;
+        margin: 5%;
+    }
+    .mile-text{
+        flex-basis: 90%;
+    }
 }
 
 
 /* mile section responsive for tablet */
 
-@media screen and (max-width: 992px) and (min-width: 577px) {
+@media screen and (min-width: 577px) and (max-width: 992px)  {
+    .mile-text h3{
+        font-size: 32px;
+    }
     .mile-img img{
         width: 300px;
         height: 370px;
@@ -524,6 +535,35 @@ nav{
 }
 
 
+/* training section responsive for mobile */
+
+@media screen and (max-width: 576px) {
+    .training{
+        margin: 5%;
+    }
+    .img-1{
+        grid-column: 1 / span 5;
+    }
+    
+    .img-2{
+        grid-column: 6 / span 12;
+    }
+    .img-3{
+        display: none;
+    }
+    
+    .img-4{
+        grid-column: 7 / span 12;
+    }
+    .img-5{
+        grid-column: 1 / span 6;
+    }
+    
+    .img-6{
+        display: none;
+    }
+    
+}
 
 
 
@@ -560,12 +600,12 @@ nav{
 }
 
 .calculator-text{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     margin: auto;
     justify-content: left;
-    align-items: center;
-    text-align: left;
+    align-items: center; */
+    text-align: center;
     margin-bottom: 50px;
 }
 
@@ -638,6 +678,35 @@ select option{
 }
 
 
+/* calculator section responsive for mobile */
+
+@media screen and (max-width: 576px) {
+    .calculator-text{
+        text-align: left;
+        margin-left: 20px;
+    }
+    .calculator-card{
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px 15px;
+    }
+    .calculator-form{
+        width: 80%;
+        padding-right: 10px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    calculator-chart h4{
+        font-size: 42px;
+    }
+    .calculator-chart table{
+        width: 80%;
+    }
+    .calculator-form input{
+        width: 140px;
+    }
+}
+
 
 /* calculator section responsive for tablet */
 
@@ -657,6 +726,9 @@ select option{
     }
     .calculator-chart{
         margin-bottom: 40px;
+    }
+    .calculator-chart table{
+        width: 60%;
     }
     .calculator-form{
         padding-left: 0;
@@ -692,6 +764,39 @@ select option{
     height: 100%;
     border-radius: 20px;
 }
+
+
+/* team section responsive for mobile */
+
+@media screen and (max-width: 576px) {
+    .team-text{
+        width: 80%;
+        margin: 30px auto;
+    }
+    
+    .team-text h3{
+        font-size: 32px;
+    }
+    .team-img-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+    }
+    .team-img-5{
+        display: none;
+    }
+    .team-img-6{
+        display: none;
+    }
+}
+
+
+
+
+
 
 /* footer section */
 
@@ -757,6 +862,21 @@ hr{
 }
 
 
+/* footer section responsive for mobile */
+
+@media screen and (max-width: 576px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px
+    }
+    .footer-col-2{
+        text-align: left;
+    }
+}
+
+
+
 /* footer section responsive for tablet */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -777,6 +897,13 @@ hr{
     .footer-col-3{
         grid-column: 2 / 3;
     }
+    hr{
+        /* background: red; */
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        width: 90%;
+        margin: 50px auto;
+    }
+    
 }
 
 

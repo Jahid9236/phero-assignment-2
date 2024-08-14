@@ -113,7 +113,7 @@ nav{
 }
 
 .banner-img{
-    background-image: url(../images/images2.png);
+    /* background-image: url(../images/images2.png); */
     flex-basis: 50%;
     position: absolute;
     top: 0;
@@ -824,6 +824,63 @@ select option{
 }
 
 
+/* review section */
+
+
+.review-box{
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.review-heading{
+    margin-bottom: 4rem;
+}
+
+.review-box img{
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.wrapper h2{
+    color: #fff;
+}
+
+.fa-star{
+    color: #fff;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: auto;
+    background: rgb(34, 34, 34);
+    border-radius: 15px;
+    padding: 50px 30px;
+}
+
+.review-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* review section responsive for mobile */
+
+.wrapper{
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.review-item p{
+    width: 80%;
+}
 
 
 
@@ -876,6 +933,21 @@ select option{
     font-size: 70px;
     line-height: 120%;
     font-weight: 800;
+}
+
+.social-container{
+    display: grid;
+    place-items: center;
+}
+
+.social{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.fa-brands{
+    color: #fff;
 }
 
 hr{

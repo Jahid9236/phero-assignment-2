@@ -873,14 +873,18 @@ select option{
 
 /* review section responsive for mobile */
 
-.wrapper{
-    grid-template-columns: 1fr;
-    max-width: 500px;
-    margin: 0 auto;
+@media screen and (max-width: 576px) {
+    .wrapper{
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .review-item p{
+        width: 80%;
+    }
+    
 }
-.review-item p{
-    width: 80%;
-}
+
 
 
 

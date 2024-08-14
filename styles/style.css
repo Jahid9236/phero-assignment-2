@@ -113,15 +113,11 @@ nav{
 }
 
 .banner-img{
+    /* background */
     flex-basis: 50%;
     position: absolute;
     top: 0;
     right: 50px;
-}
-
-.banner-img img{
-    /* width: 50%; */
-
 }
 
 .banner-title{

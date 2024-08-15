@@ -834,6 +834,8 @@ select option{
 
 
 .review-box{
+    margin-top: 0;
+    margin-bottom: 0;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -889,9 +891,11 @@ select option{
         width: 80%;
     }
     .review-heading{
+        margin-top: 0;
+        margin-bottom: 0;
         font-size: 32px;
         font-weight: 800;
-        line-height: 800;
+        margin-bottom: 50px;
     }
 }
 
@@ -955,6 +959,7 @@ select option{
 }
 
 .social{
+    margin-bottom: 30px;
     display: flex;
     gap: 10px;
     cursor: pointer;

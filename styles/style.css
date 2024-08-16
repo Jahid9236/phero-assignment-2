@@ -234,6 +234,9 @@ nav{
     .tangerine{
         font-size: 4rem;
     }
+    .btn-primary{
+        margin-top: 10px;
+    }
     .banner-card-1{
         top: 55%;
         right: -25%;
@@ -402,6 +405,10 @@ nav{
         line-height: 120%;
         font-weight: 800;
     }
+    .mile-img img{
+        transform: translate(-45%, 50%) scale(3.6);
+    }
+    
 }
 
 
@@ -412,11 +419,14 @@ nav{
         font-size: 32px;
     }
     .mile-img img{
-        width: 300px;
-        height: 370px;
+        width: 130%;
+        /* height: 370px; */
         
-        transform: translate(-35%, 30%) scale(3);
+        transform: translate(-45%, 40%) scale(3);
         /* transform: translate(5%, 5%); */  
+    }
+    .mile-img{
+        flex-basis: 50%;
     }
     
 } 
@@ -877,6 +887,10 @@ select option{
     align-items: center;
     text-align: center;
 }
+.review-item img{
+    width: 100px;
+    height: 100px;
+}
 
 
 /* review section responsive for mobile */
@@ -890,6 +904,7 @@ select option{
     .review-item p{
         width: 80%;
     }
+
     .review-heading{
         margin-top: 0;
         margin-bottom: 0;
